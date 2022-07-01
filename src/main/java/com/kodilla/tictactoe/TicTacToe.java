@@ -136,7 +136,7 @@ public class TicTacToe extends Application {
             }
     }
 
-    public void checkDiagonaRight() {
+    public void checkDiagonalRight() {
         if (gameboard[0][2].getText().equals(gameboard[1][1].getText()) &&
                 (gameboard[0][2].getText().equals(gameboard[2][0].getText()))) {
             gameOver();
@@ -147,6 +147,6 @@ public class TicTacToe extends Application {
         checkRows();
         checkCols();
         checkDiagonalLeft();
-        checkDiagonaRight();
+        checkDiagonalRight();
     }
 }
